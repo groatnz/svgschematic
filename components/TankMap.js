@@ -2,6 +2,7 @@ import { useState } from 'react'
 import styles from '../styles/Home.module.css'
 import { tanks } from '../data/tanks'
 import { bays } from '../data/bays'
+import TankMonthlyPlan from './TankMonthlyPlan'
 
 const tankAddressToProps = (tank) => {
   const bay = bays[tank.address.bay]
@@ -37,19 +38,14 @@ export const Tank = ({ tank }) => {
       onPointerEnter={(e) => setShow(true)}
       onPointerLeave={(e) => setShow(false)}
     >
-      <circle
-        className={styles.tankCircle}
-        id={tank.name}
-        cx={cx} cy={cy} r={r}
-        fill={tank.colour}
+      <TankMonthlyPlan 
+        cx={cx} 
+        cy={cy} 
+        stocks={tank.stocks} 
+        name={tank.name}
+        batch={tank.batch || ''}
+        size={r}
       />
-      <text
-        className={styles.tankLabel}
-        x={cx} y={cy}
-        dx={-tank.diameter_mm / 2}
-        dy={-tank.diameter_mm / 2}
-      >{tank.name}
-      </text>
       {show && <TankPopup x={cx} y={cy} tank={tank} />}
     </g>
   )

@@ -13,7 +13,7 @@ const SvgZoomContainer = ({ children }) => {
         <TransformComponent>
           <svg
             preserveAspectRatio='xMidYMin meet'
-            viewBox='0 0 50000 33000' width='90%'
+            viewBox='0 0 100000 80000' width='90%'
             style={{
               border: '2px solid darkblue',
               backgroundColor: 'aliceblue'
