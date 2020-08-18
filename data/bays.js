@@ -28,7 +28,7 @@ export const bays = [
     x: 0,
     y: 0,
     colour: colourMap[0],
-    pic: '/bay-images/FFF_E bay.jpg',
+    pic: '/bay-images/fffe.jpg',
     description: 'Some descriptive information about the bay.'
   },
   {
@@ -40,7 +40,7 @@ export const bays = [
     x: 25000,
     y: 0,
     colour: colourMap[1],
-    pic: '/bay-images/FFF_F bay.jpg'
+    pic: '/bay-images/ffff.jpg'
 
   },
   {
@@ -52,7 +52,7 @@ export const bays = [
     x: 50000,
     y: 0,
     colour: colourMap[2],
-    pic: '/bay-images/FFF_G bay.jpg'
+    pic: '/bay-images/fffg.jpg'
   },
   {
     name: 'H Bay',
@@ -63,7 +63,7 @@ export const bays = [
     x: 75000,
     y: 0,
     colour: colourMap[3],
-    pic: '/bay-images/FFF_H bay.jpg',
+    pic: '/bay-images/fffh.jpg',
     description: 'Feed preparation area.'
 
   },
@@ -76,7 +76,7 @@ export const bays = [
     x: 0,
     y: 39000,
     colour: colourMap[0],
-    pic: '/bay-images/FFF_D bay.jpg'
+    pic: '/bay-images/fffd.jpg'
 
   },
   {
@@ -89,7 +89,7 @@ export const bays = [
     y: 39000,
 
     colour: colourMap[1],
-    pic: '/bay-images/FFF_C bay.jpg'
+    pic: '/bay-images/fffc.jpg'
 
   },
   {
@@ -101,7 +101,7 @@ export const bays = [
     x: 50000,
     y: 39000,
     colour: colourMap[2],
-    pic: '/bay-images/FFF_B bay.jpg'
+    pic: '/bay-images/fffb.jpg'
   },
   {
     name: 'A Bay',

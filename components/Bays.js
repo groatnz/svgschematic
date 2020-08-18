@@ -3,7 +3,7 @@ import styles from './Bays.module.css'
 import { bays } from '../data/bays'
 
 const BayPopup = ({ bay }) => {
-  const scale = 'scale(30 30) translate(18,40)'
+  const scale = 'scale(30 30) translate(18,600)'
   return (
     <g transform={scale}>
       <foreignObject zOrder='20' width='800' height='600'>
