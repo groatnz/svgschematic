@@ -17,7 +17,7 @@ export const bays = [
     width: 100000,
     x: 0,
     y: 37000,
-    colour: '#c0c0c0'
+    colour: '#c0c0c0',
   },
   {
     name: 'E bay',
@@ -27,7 +27,9 @@ export const bays = [
     width: 25000,
     x: 0,
     y: 0,
-    colour: colourMap[0]
+    colour: colourMap[0],
+    pic: '/bay-images/FFF_E bay.jpg',
+    description: 'Some descriptive information about the bay.'
   },
   {
     name: 'F bay',
@@ -37,27 +39,33 @@ export const bays = [
     width: 25000,
     x: 25000,
     y: 0,
-    colour: colourMap[1]
+    colour: colourMap[1],
+    pic: '/bay-images/FFF_F bay.jpg'
+
   },
   {
-    name: 'E Bay',
+    name: 'G Bay',
     rows: 20,
     height: 37000,
     cols: 25,
     width: 25000,
     x: 50000,
     y: 0,
-    colour: colourMap[2]
+    colour: colourMap[2],
+    pic: '/bay-images/FFF_G bay.jpg'
   },
   {
-    name: 'E Bay',
+    name: 'H Bay',
     rows: 20,
     height: 37000,
     cols: 25,
     width: 25000,
     x: 75000,
     y: 0,
-    colour: colourMap[3]
+    colour: colourMap[3],
+    pic: '/bay-images/FFF_H bay.jpg',
+    description: 'Feed preparation area.'
+
   },
   {
     name: 'D Bay',
@@ -67,7 +75,9 @@ export const bays = [
     width: 25000,
     x: 0,
     y: 39000,
-    colour: colourMap[0]
+    colour: colourMap[0],
+    pic: '/bay-images/FFF_D bay.jpg'
+
   },
   {
     name: 'C Bay',
@@ -78,7 +88,9 @@ export const bays = [
     x: 25000,
     y: 39000,
 
-    colour: colourMap[1]
+    colour: colourMap[1],
+    pic: '/bay-images/FFF_C bay.jpg'
+
   },
   {
     name: 'B Bay',
@@ -88,7 +100,8 @@ export const bays = [
     width: 25000,
     x: 50000,
     y: 39000,
-    colour: colourMap[2]
+    colour: colourMap[2],
+    pic: '/bay-images/FFF_B bay.jpg'
   },
   {
     name: 'A Bay',

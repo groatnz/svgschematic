@@ -3,12 +3,14 @@ import styles from './Bays.module.css'
 import { bays } from '../data/bays'
 
 const BayPopup = ({ bay }) => {
-  const pos = 'scale(20 20)'
+  const scale = 'scale(30 30) translate(18,40)'
   return (
-    <g transform={pos}>
-      <foreignObject width='12rem' height='10rem'>
-        <div className={styles.popup}>
-          <h1>{bay.name}</h1>
+    <g transform={scale}>
+      <foreignObject zOrder='20' width='800' height='600'>
+        <div >
+          {/* <h1>{bay.name}</h1> */}
+          <p>{bay.description}</p>
+          {bay.pic && <img src={bay.pic} />}
         </div>
       </foreignObject>
     </g>
@@ -22,24 +24,36 @@ export const Bay = ({ bay }) => {
   return (
     <g
       transform={pos}
-      onPointerEnter={(e) => setShow(true)}
-      onPointerLeave={(e) => setShow(false)}
     >
       <rect
         className={styles.bayRect}
         id={bay.name}
         width={bay.width}
         height={bay.height}
-        stroke='lightblue'
-        fill={show ? bay.colour : '#FFFFF8'}
+        stroke={bay.colour}
+        fill={bay.colour}
+        fill-opacity="0"
         strokeWidth='100px'
       />
-      <text
-        className={styles.bayLabel}
-        dx='1em'
-        dy='1em'
-      >{bay.name}
-      </text>
+      <g // Bay Label
+        onPointerEnter={(e) => setShow(true)}
+        onPointerLeave={(e) => setShow(false)}
+      >
+        <rect
+          className={styles.bayRect}
+          id={bay.name}
+          width={4000}
+          height={1500}
+          stroke={bay.colour}
+          fill={bay.colour}
+        />
+        <text
+          className={styles.bayLabel}
+          dx='1em'
+          dy='1.2em'
+        >{bay.name}
+        </text>
+      </g>
       {show && <BayPopup bay={bay} />}
     </g>
   )

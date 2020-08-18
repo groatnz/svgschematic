@@ -36,11 +36,11 @@ export default function Home () {
 
       <main>
         <h1>
-          Welcome to my Fish Farm
+          Nelson SRN Dashboard
         </h1>
         <SvgZoomContainer>
-          <BayMap />
           <TankMap />
+          <BayMap />
         </SvgZoomContainer>
       </main>
 
