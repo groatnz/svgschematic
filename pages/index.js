@@ -6,16 +6,17 @@ export default function Home () {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>PFR Nelson SRN</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <br />Nelson Seafood Research Centre
+          Nelson Seafood Research Centre
         </h1>
 
         <div className={styles.grid}>
+        <img className='w-30' src='/NelsonSRN-site-plan.png' alt='Nelson SRN site plan' />
           <Link href='/map'>
             <a className={styles.card}>
               <h3>Dashboard &rarr;</h3>
@@ -24,7 +25,10 @@ export default function Home () {
           </Link>
           <a href='#' className={styles.card}>
             <h3>Plan</h3>
-            <p>Tools for Diet planning and Batch movements</p>
+            <ul>
+              <li>Tank allocation</li>
+              <li>Feed Schedule</li>
+            </ul>
           </a>
           <a href='#' className={styles.card}>
             <h3>Today</h3>
@@ -34,7 +38,10 @@ export default function Home () {
             <h3>Insights</h3>
             <p>Reports, charts and data access</p>
           </a>
-
+          <a href='#' className={styles.card}>
+            <h3>Library</h3>
+            <p>Documentation, TOPS, SOPS</p>
+          </a>
         </div>
       </main>
 

@@ -31,10 +31,9 @@ const TankPopup = ({ x, y, tank }) => {
 export const Tank = ({ tank }) => {
   const [show, setShow] = useState(false)
   const { cx, cy, r, bay } = tankAddressToProps(tank)
-  const baypos = `translate(${bay.x} ${bay.y})`
   return (
     <g
-      transform={baypos}
+      transform={`translate(${bay.x} ${bay.y})`}
       onPointerEnter={(e) => setShow(true)}
       onPointerLeave={(e) => setShow(false)}
     >

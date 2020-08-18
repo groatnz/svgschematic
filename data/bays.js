@@ -20,7 +20,7 @@ export const bays = [
     colour: '#c0c0c0'
   },
   {
-    name: 'E',
+    name: 'E bay',
     rows: 37,
     height: 37000,
     cols: 25,
@@ -30,7 +30,7 @@ export const bays = [
     colour: colourMap[0]
   },
   {
-    name: 'F',
+    name: 'F bay',
     rows: 37,
     height: 37000,
     cols: 25,
@@ -40,7 +40,7 @@ export const bays = [
     colour: colourMap[1]
   },
   {
-    name: '',
+    name: 'E Bay',
     rows: 20,
     height: 37000,
     cols: 25,
@@ -50,7 +50,7 @@ export const bays = [
     colour: colourMap[2]
   },
   {
-    name: '',
+    name: 'E Bay',
     rows: 20,
     height: 37000,
     cols: 25,
@@ -60,7 +60,7 @@ export const bays = [
     colour: colourMap[3]
   },
   {
-    name: 'D',
+    name: 'D Bay',
     rows: 20,
     height: 39000,
     cols: 25,
@@ -70,7 +70,7 @@ export const bays = [
     colour: colourMap[0]
   },
   {
-    name: 'C',
+    name: 'C Bay',
     rows: 20,
     height: 39000,
     cols: 25,
@@ -81,7 +81,7 @@ export const bays = [
     colour: colourMap[1]
   },
   {
-    name: '',
+    name: 'B Bay',
     rows: 20,
     height: 39000,
     cols: 25,
@@ -91,7 +91,7 @@ export const bays = [
     colour: colourMap[2]
   },
   {
-    name: '',
+    name: 'A Bay',
     rows: 20,
     height: 39000,
     cols: 25,
